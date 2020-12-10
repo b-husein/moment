@@ -1,0 +1,210 @@
+html, body {
+	height: 100%;
+}
+
+h1 {
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+p {
+	font-family: 'Maven Pro', sans-serif;
+	text-align: justify;
+	text-justify: inter-word;
+	font-size: 14px;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+.row {
+	margin-left: 0px;
+	margin-right: 0px;
+}
+
+.header-block {
+	width: 45%;
+	margin: 0 auto;
+	border-bottom: #E3E3E3 solid 1px;
+	/*box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);*/
+}
+
+.header-block a {
+	color: #333;
+}
+
+.header-block a:hover {
+	color: #000;
+}
+
+.blog-title {
+	font-family: 'Maven Pro', sans-serif;
+}
+
+.blog-title h1 {
+	text-align: center;
+	font-size: 80px;
+	margin-top: 26px;
+	font-weight: 400;
+}
+
+.square {
+	text-align: right;
+  	margin-top: 18px;
+  	font-size: 30px;
+}
+
+.post-list {
+	width: 40%;
+	margin: 0 auto;
+	padding-top: 40px;
+	padding-bottom: 40px;
+	font-family: 'Maven Pro', sans-serif;
+}
+
+.post-list a {
+	color: #000;
+	padding-bottom: 3px;
+}
+
+.post-list a:hover {
+	border-bottom: #8C8C8C solid 2px;
+	text-decoration: none;
+	color: #8C8C8C;
+}
+
+.post-content {
+  padding-left: 20px;
+	padding-right: 20px;
+	padding-top: 40px;
+	padding-bottom: 20px;
+}
+
+.post-content h1 {
+	font-family: 'Maven Pro', sans-serif;
+	margin-bottom: 5px;
+}
+
+.post-content {
+	font-size: 18px;
+	line-height: 3rem;
+}
+
+.post-data img {
+	min-width:auto;
+  	display: block;
+  	margin: auto;
+	max-width: 100%;
+}
+
+.post-meta-data {
+	color:  #767676;
+}
+
+
+.post-line {
+	margin-top: 15px;
+	margin-bottom: 12px;
+	text-align: center;
+}
+
+.post-titles h1 {
+	font-size:30px;
+	display: inline;
+	line-height: 4rem;
+}
+
+.post-page-title {
+	line-height: 4.5rem;
+	text-align: center;
+}
+
+.post-meta-data {
+	font-size: 20px;
+	margin-bottom:30px;
+	text-align: center;
+}
+
+.dates {
+	color: #767676;
+    font-size: 18px;
+	font-family: 'Maven Pro', sans-serif;
+}
+
+/********* 404 *************/
+
+.error-page {
+	font-size: 80px;
+	text-align: center;
+}
+
+
+/********* FOOTER *************/
+
+.footer {
+	width: 45%;
+	margin: 0 auto;
+	border-top: #E3E3E3 solid 1px;
+	font-family: 'Maven Pro', sans-serif;
+	text-align: center;
+    font-size: 16px;
+}
+
+.footer a {
+	color: #000;
+}
+
+.footer a:hover {
+	border-bottom: #E3E3E3 solid 1px;
+	text-decoration: none;
+	color: #E3E3E3;
+}
+
+.footer-inner .col-md-4 { 
+	height: 100%;
+}
+
+.footer-inner {
+	width: 100%;
+	margin: 0 auto;
+	
+	padding-top: 30px;
+	padding-bottom: 20px;
+	line-height: 3rem;
+
+	padding-bottom: 10px;
+	border: #E3E3E3 solid 1px;
+	/*box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;*/
+}
+
+/********* DESCRIPTION TEXT *************/
+
+.description {
+	display: block;
+	margin: 0 auto;
+	width: 50%;
+	padding-bottom: 10px;
+	text-align: center;
+}
+
+
+/********* COPYRIGHT *************/
+
+.copyright {
+	width: 45%;
+	margin: 0 auto;
+	text-align: center;
+	padding-bottom: 10px;
+	font-family: 'Maven Pro', sans-serif;
+	font-size: 16px;
+}
+
+/********* MEDIA QUERIES *************/
+
+@media only screen and (max-width: 900px) {
+	.header-block, .post-list, .footer, .copyright {
+		width: 80%;
+	}
+}
+
