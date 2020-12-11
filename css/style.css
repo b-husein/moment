@@ -110,13 +110,13 @@ a:hover {
 }
 
 .post-titles h1 {
-	font-size:30px;
+	font-size: 30px;
 	display: inline;
 	line-height: 4rem;
 }
 
 .post-page-title {
-	line-height: 4.5rem;
+	line-height: 36px;
 	text-align: center;
 }
 
@@ -174,7 +174,6 @@ a:hover {
 	line-height: 3rem;
 
 	padding-bottom: 10px;
-	border: #E3E3E3 solid 1px;
 	/*box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;*/
 }
 
@@ -216,4 +215,5 @@ a:hover {
 	.blog-title h1 {
 		font-size: 60px;
 	}
+
   }
