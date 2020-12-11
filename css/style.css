@@ -202,9 +202,18 @@ a:hover {
 
 /********* MEDIA QUERIES *************/
 
-@media only screen and (max-width: 900px) {
+@media (max-width: 900px) {
 	.header-block, .post-list, .footer, .copyright {
 		width: 80%;
 	}
-}
+  }
 
+  @media (max-width: 450px) {
+	.header-block, .post-list, .footer, .copyright {
+		width: 80%;
+	}
+
+	.blog-title h1 {
+		font-size: 60px;
+	}
+  }
