@@ -1,4 +1,4 @@
-Live version is avaliable [here](https://b-husein.github.io/simplefolio/)
+Live version is avaliable [here](https://b-husein.github.io/moment/)
 
 ## Features
 
@@ -6,6 +6,6 @@ Live version is avaliable [here](https://b-husein.github.io/simplefolio/)
 - Coded with basic HTML5 and CSS3; 🔨
 - Does not contain JavaScript Frameworks or libraries as dependencies.
 
+<p align="center">
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-
-[![forthebadge cc-by-nd](http://ForTheBadge.com/images/badges/cc-by-nd.svg)](https://creativecommons.org/licenses/by-nd/4.0)
+</p>
