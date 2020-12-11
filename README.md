@@ -7,5 +7,5 @@ Live version is avaliable [here](https://b-husein.github.io/moment/)
 - Does not contain JavaScript Frameworks or libraries as dependencies.
 
 <p align="center">
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+<a target="_blank" href="https://opensource.org/licenses/MIT"><img src="https://img.shields.io/badge/License-MIT-yellow.svg" alt="MIT"></a>
 </p>
