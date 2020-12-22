@@ -1,4 +1,6 @@
-Live version is avaliable [here](https://b-husein.github.io/moment/)
+Live version is avaliable [here;](https://b-husein.github.io/moment/)
+
+Resource related to [graphics;](https://freedesignresources.net/category/free-graphics/)
 
 ## Features
 
