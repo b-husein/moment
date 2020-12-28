@@ -1,6 +1,6 @@
 ## Features
 
-- Clean, responsive, well organized and simple with Modern UI Design. ⚡
+- Clean, responsive, well organized with Modern UI Design. ⚡
 - Coded with basic HTML5 and CSS3; 🔨
 - Does not contain JavaScript Frameworks or libraries as dependencies.
 
