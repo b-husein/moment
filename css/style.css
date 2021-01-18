@@ -8,10 +8,11 @@ h1 {
 }
 
 p {
+	/* font-family: 'Roboto', sans-serif; */
 	font-family: 'Maven Pro', sans-serif;
 	text-align: justify;
 	text-justify: inter-word;
-	font-size: 14px;
+	font-size: 20px;
 }
 
 a:hover {
@@ -204,6 +205,11 @@ a:hover {
 @media (max-width: 900px) {
 	.header-block, .post-list, .footer, .copyright {
 		width: 80%;
+	}
+	p {
+		text-align: justify;
+		text-justify: inter-word;
+		font-size: 16px;
 	}
   }
 

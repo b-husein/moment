@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <title>moment.</title>
+
+    <meta name="moment." content="blog"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="icon" href="../../img/favicon.png" type="image/icon type">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Maven+Pro&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="../../css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../../css/style.css">
+</head>
+
+<body>
+
+  <header class="header-block row">
+    <div class="blog-title">
+      <a href="../../index.html"><h1>moment.</h1></a>
+    </div>
+
+  </header>
+
+
+
+<section class="post-list post-content"><div class="post-data">
+  <h1 class="post-page-title">Oversimplified explanation of data engineering.</h1>
+  <p class="post-meta-data">by Husein</p>
+
+<!-- <div><img src="../img/code.png" alt=""></div> -->
+
+<p>
+  Data engineering provides the foundation for data science and analytics. It also
+  constitutes an important aspect of all businesses and it's a big part of the big
+  data ecosystem, closely linked to data science.
+</p><br>
+
+<p>
+  At the lowest level, data engineering involves the movement of data from one 
+  system or format, to another system or format. As Paul Crickard says: "Using 
+  more common terms, data engineers query data from a source (extract), they perform
+  some modifications to the data (transform), and then they put that data in a location
+  where users can access it and know that it is production quality (load)."
+</p><br>
+
+<p>
+  The definition of data engineer above is broad and simplistic. I will use an example
+  from Paul Crickards book to explain more visually a role of data engineer.
+</p><br>
+
+<p>
+  An online retailer has a website where you can purchase widgets in variety of colors. 
+  The website is backed by a relational database. Every transaction is stored in the database.
+  How many blue widgets did the retailer sell in the last quarter? 
+</p><br>
+
+<p>To answer this question, you could run a SQL query on the database. This doesn't rise to 
+   the level of needing a data engineer. But as the site grows, running queries on the production
+   database is no longer practical. Furthermore, there may be more than one database that records
+   transactions. There may be a database at different geographical locations - for example, the 
+   retailers in North America may have a different database than the retailers in Asia, Africa and 
+   Europe.
+</p><br>
+
+<p>
+  To answer the preceding question, a data engineer would create connections to all of the transactional
+  databases for each region, extract the data, and load it into a data warehouse. From there, you could 
+  now count the number of all the blue widgets sold.
+</p><br>
+
+<p>
+  In a real world example, instead of finding the number of blue widgets sold, data engineer would have to
+  answer some questions like how do we find out which locations sell the most widgets, what is the peak time
+  for selling widgets, how many users put widgets in their carts and remove them later, how do we find out 
+  the combinations of widgets that are sold together?
+</p><br>
+
+<p>To answer these questions we would have to perform combination of extracting, loading, transforming data (ETL)
+   and create a data pipeline. After that data would be placed into data warehouse where it would be queried. 
+</p><br>
+
+</section>
+
+  <!-- FOOTER -->
+  <section class="footer">
+    <div class="footer-inner row">
+      <div class="col-md-12">
+        <p class="description">
+          <a href="../coding.html">Go back to Data Engineering section.</a>
+        </p>
+      </div>
+      
+      <div class="col-md-12">
+        <a href="../../index.html">home</a>&nbsp;&nbsp;
+        <a href="../../about.html">about</a>&nbsp;&nbsp;
+        <a href="../../contact.html">contact</a>&nbsp;&nbsp;
+        <!-- COPYRIGHT -->
+        <div class="copyright">&copy; 2021 | coded by Husein | All rights reserved</a></div>
+      </div>
+    </div>
+  </section>
+
+ </body>
+</html>
