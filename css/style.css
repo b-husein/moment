@@ -10,9 +10,9 @@ h1 {
 p {
 	/* font-family: 'Roboto', sans-serif; */
 	/* font-family: 'Maven Pro', sans-serif; */
-	font-family: 'Montserrat', sans-serif;
+	font-family: 'Nunito Sans', sans-serif;
 	text-align: justify;
-	text-justify: inter-word;
+	text-justify: inter-character;
 	font-size: 18px;
 }
 
