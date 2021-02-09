@@ -1,6 +1,7 @@
 ## Features
 
 - Clean, responsive, well organized with Modern UI Design. ⚡
+- Contains several categories with my personal notes about coding, networking and lifestyle.
 
 Live version is avaliable [here;](https://b-husein.github.io/moment/)
 
