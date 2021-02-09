@@ -69,6 +69,100 @@
   </li>
 </ol><br>
 
+<p>
+  Now let's have a closer look at each of these items.
+</p>
+
+<p>
+  1. What it means for a web server to <strong>listen?</strong>
+  When web server app starts up, it doesn't do anything until it receives an incoming request, 
+  until then the web server does not do anything. What exactly is the web server listening to? 
+</p><br>
+
+<p>
+  2. The answer is <strong>the network port</strong> provided by operating system that the web server is running on (Linux, Windows, MacOS); 
+  For example we can configure that port to be 8080, if we are running our server locally, we will use 
+  link http://localhost:8080;
+</p><br>
+
+<p>
+  so here we are using unencrypted http connection, and in most cases, it's not necessary to specify the port, because the web browser 
+  will automatically route our request to port 80  by default. The point is that one signe computer can have many web servers running 
+  at the same time but listening on different ports. Our request must be sent to the correct port in order to reach the desired web server. 
+</p><br>
+
+<p>
+  3. What does it means <strong>to send a REQUEST</strong> to a web server? Web servers and web clients (like our web browsers) communicate via HyperText 
+  Transfer Protocol (HTTP) and we can think of this as the language that web server and web client use. But what is HTTP actually look like?
+</p><br>
+
+<p>
+  The HyperText in HTTP literally means text. It's just a human-readable text that web servers and clients exchange back and forth.  
+  The example of HTTP request:
+</p><br>
+
+<p>
+  <code>
+    GET /orders/123 HTTP/1.1 <br>
+    Host: 127.0.0.1:8080 <br>
+    User-Agent: Manual-Http-Request
+  </code>
+</p><br>
+
+<p>
+  And we can see a valid request in HTTP language. The first line is the start line which contains the request method, in this case it's GET, 
+  the request target or resource /orders/123 - for example an order on e-commerce website, and finally the HTTP version, which in our case is 
+  HTTP/1.1
+</p><br>
+
+<p>
+  Next two lines represent headers of our request as defined as key value pairs. On the line two, we have two of them - Host, which is the IP 
+  and port we are attempting to send our request to, and on the third line is the User-Agent which tells server what type of browser we are 
+  using, for example if we are sending request on mobile device, the server will serve us mobile content in that case. And usually after these 
+  three lines, we will have first line break.
+</p><br>
+
+<p>
+  Another block that we cannot see up there can contain optional body that starts after the first line break at the end of our header block; 
+  since we are looking at GET request up there, we actually don't have a body, but for example, let's suppose that we have submitted a 
+  form to server via POST request that looks like this:
+</p><br>
+
+<p>
+  <code>
+    POST /orders HTTP/1.1 <br>
+    Host: 127.0.0.1:8000 <br>
+    User-Agent: Manual-Http-Request <br>
+    Content-Length: 12 <br>
+    Content-Type: application/x-www <br>
+    order_id=123
+  </code>
+</p><br>
+
+<p>
+  This is the HTTP protocol itself. It's considered to be an Application Protocol, like the language that web server and web client speak. 
+  If any other AP other than HTTP is sent to our web server it will not know how to handle it, for example FTP or File Transfer Protocol 
+  that is typically used to transfer files. 
+</p><br>
+
+<p>
+  Now if we started FTP server, it begins listening for requests sent in the File Transfer Protocol, which is a different language that 
+  HyperText Transfer Protocol that web servers and web browsers speak. If we send HTTP request to FTP server, we would get invalid response 
+  error because FTP server would not understand the request. 
+</p><br>
+
+<p>
+  4. Now, how is the HTTP request actually sent to a web server? We know that HTTP and FTP are Application Layer Protocols which means that 
+  they both run on the top of the <strong>TRANSPORT</strong> layer protocol which is the Transmission Control Protocol (TCP) which (very simplified definition) 
+  breaks data into packets, then using handshake and confirmations it ensures that every packet is successfully received by the receipient, 
+  and the receipient knows the order of each packet for the reassembly. 
+</p><br>
+
+<p>
+  5. After this the web server returns a <strong>RESPONSE.</strong>  
+</p><br>
+
+
 
 </section>
 
