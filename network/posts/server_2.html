@@ -36,8 +36,35 @@
 <!-- <div><img src="../img/code.png" alt=""></div> -->
 
 <p>
-  5. After this the web server returns a <strong>RESPONSE.</strong>  
+  5. After this the web server returns a <strong>RESPONSE</strong>, just like our web browser has sent http based request, 
+  now server returns http based response in a form of text data separated in three blocks. 
 </p><br>
+
+<p>
+  <code>
+    HTTP/1.1 200 OK <br>
+    Content-Length: 88 <br>
+    Content-Type: text/html <br>
+    Connection: Closed
+  </code>
+</p><br>
+
+<p>
+  first line is status line that contains http version and http status code. In our case it contains 200 which is generic 
+  response for a successful http request. Below that, in other three lines we have multiple headers defined as key value pairs. 
+  Content-Type is very important here and it tells browser what to expect, in our case it is text/html or text content. 
+  Now, instead of html file, if this is an API response, the content might be shown as Content-Type: application/json, 
+  and in that case the response body would contain some JSON data for our application to consume, or in another case Content-Type: 
+  image/jpeg for images etc.
+</p><br>
+
+<p>
+  Content returned by web server is not limited just to web pages. The body of http response can contain images, pdf documents, 
+  videos, JS code, web fonts (like Google fonts) etc.
+</p><br>
+
+
+
 
 
 
