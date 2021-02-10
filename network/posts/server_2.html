@@ -63,8 +63,42 @@
   videos, JS code, web fonts (like Google fonts) etc.
 </p><br>
 
+<p>
+  6. The big question is - how web server decides what to respond with? In practical sense, if we requested an image resource and web 
+  server returns it, where is that web server getting an image from, how do we set this up in the real world? Determining which <strong>RESOURCE</strong> 
+  to return is often refered to as routing - which is actually just a practice of connecting the request with requested resource or content. 
+  Routing can be separated into two distinct categories: 
+</p><br>
 
+<p>
+  a) Static routing - web server serving files out of a folder, just like when we have a folder on our desktop we can navigate to and open random stuff stored in 
+  this folder. Similarly, we can point web server to a directory of a file that we need and tell it to return to us. For example this blog that you're reading 
+  right now is a static page that is hosted on GitHub pages, and whenever we open the link https://b-husein.github.io/moment/ the GitHub 
+  will return index.html hosted on its server.
+</p><br>
 
+<p>
+  b) Dynamic routing - is specific to dynamic change of content, for example on Facebook when we have a lot of different people logging to their profile 
+  at the same time, and web server must respond with different types of files etc. Now we would save all of this content into a database, and serve that 
+  content dinamically. In practice, this usually means configuring your web server to route all requests to a single file or executable which serves 
+  as an entry point for your web app. 
+</p><br>
+
+<p>
+  Our web app would evaluate http request and then dinamically prepare a response depending on a requested resource. For example with a e-commerce 
+  site we've had previously when we wrote about GET request, it contains 
+</p><br>
+
+<p>
+  <code>
+    GET /orders/123 HTTP/1.1
+  </code>
+</p><br>
+
+<p>
+  and when we send this request to web app it would search the database for order 123 and return a status. And this was a basic 
+  overview of what server does and how it works. 
+</p><br>
 
 
 
