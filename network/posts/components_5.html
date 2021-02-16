@@ -36,13 +36,81 @@
 <!-- <div><img src="../img/code.png" alt=""></div> -->
 
 <p>
- In preparation.
+ When we talk about <strong>network topology</strong>, we can talk about it in two ways. The first is <strong>physical</strong>
+ and how devices are connected or cabled together by media, and second is <strong>logically</strong> and how the actuall network
+ traffic flows. Now what matters here is to know that there is a difference between physical and logical topology, and that difference
+ is that one is focused on the logical or network flow and other on the physical layout of the cable. So, what are some of the options
+ we have for different topologies?
 </p><br>
 
-<!-- <p>
- In the next post, I will write about wired network topology.
-  <a href="components_5.html">Click here to continue reading.</a>
-</p><br> -->
+<p>
+ <strong>Bus Topology</strong> is a topology where single cable running through an area that requires network connectivity amd each 
+ device 'taps' into the cable using either a T-connector or a vampire tap. This is an old technology but we still do have some Bus topologies
+ out there. If we see a bus topology, we need to have in mind that all the devices on this cable would form 'a single collision domain', this 
+ means that if all connected devices would try to talk at the same time, we would have a collision because they all are connected to the same 
+ cable, and in other to avoid that they would have to take turns. 
+</p><br>
+
+<p>
+ <strong>Ring Topology</strong> uses a cable running in a circular loop and each device is connected to the ring with data traveling in a 
+ singular direction. Data would travel clockwise or counter-clockwise depending of the configuration of the network. In order to overcome 
+ the collision we've had a <strong>token ring</strong>; This token ring was just a ring topology that uses an electronic token to prevent
+ collisions by requiring a device to hold the 'token' when communicating on the network. This would allow computers to take turns. These rings
+ were vulnerable to being broken, if we cut the cable it would take down the network.  
+</p><br>
+
+<p>
+ Now, there is something known as <strong>FDDI</strong> which is Fiber network. The FDDI ring actually uses two counter-rotating rings for 
+ redundancy, one on top of the another. One operates in clockwise direction, the other one in counter-clockwise direction. Redundancy means
+ - if one of the rings is broken, the other one will take the network load. For Network+ exam it's important to note that if we see the word 
+ 'ring' we need to have in mind the FDDI ring; because modern ring networks are usually FDDI networks. Have in mind ring = redundancy. We can 
+ get some sort of questions like which of these topologies is redundant, and then we will have options like star, bus and ring, and the answer 
+ is going to be - a ring. 
+</p><br>
+
+<p>
+ <strong>Star Topology</strong> is the most popular physical LAN topology where devices connect to a single centralized point or device, 
+ which can be a switch, and this is how most of our networks look like nowadays. We can use it with fiber, copper or wireless if we want it,
+ and it will use star topology. The problem with star topology is that we have one central device and if the central device fails, the entire
+ network fails, because it's the 'single point of failure'. Even though these are very common to use and very expensive to use, they still have
+ this vulnerability called 'a single point of failure'. 
+</p><br>
+
+<p>
+ <strong>Hub-and-Spoke Topology</strong> tries to overcome 'single point of failure', it's similar to Star topology, but with WAN links instead
+ of LAN connections and it is used for connecting multiple sites. It's not redundant because if one hub fails, we can loose large portions of 
+ the network. 
+</p><br>
+
+<p>
+ <strong>Full-Mesh Topology</strong> is a way to go if we are looking for a full redundancy. It's the most redundant topology where every node
+ connects to every other node and optimal routing between nodes is always available. It works really well if you have a small network. Optimal
+ routing is always available. The bad side of this is very large number of connections, it's very expensive to maintain and operate. The example
+ that we have on six machines in this topology, to calculate the number of connections: <br>
+
+  <code>
+    x = n(n-1)/2 <br>
+    x = 6(6-1)/2 <br>
+    x = 15
+  </code>
+</p><br>
+
+<p>
+ So, for 6 machines it's going to take 15 cables to connect. If we have more machines, like 10 or 15, it will be messy, so this is 
+ why we don't see Full-Mesh Topology in a physical network, instead we will see it often as a logical network. 
+</p><br>
+
+<p>
+ <strong>Partial-Mesh Topology</strong> is often used in our business networks and it's a hybrid of the full-mesh and hub-and-spoke topologies.
+ It provides an optimal routes between some sites, while avoiding the expense of connecting every site. It gives us additional redundancy we 
+ need. To get it right, we need to understand traffic patterns and know where to put those main hubs and basically it then becomes modified
+ Hub-and-Spoke, we have more hubs then we did before which allows us to have better redundancy in single Hub-and-Spoke configuration. 
+</p><br>
+
+<p>
+ In the next post, I will write about wireless network topology.
+  <a href="components_6.html">Click here to continue reading.</a>
+</p><br>
 
 
 
