@@ -1,5 +1,7 @@
 html, body {
 	height: 100%;
+	background-color: #000;
+	color: #fff;
 }
 
 h1 {
@@ -28,7 +30,7 @@ a:hover {
 }
 
 .header-block a:hover {
-	color: #000;
+	color: #fff;
 }
 
 .blog-title {
@@ -60,7 +62,7 @@ a:hover {
 }
 
 .post-list a {
-	color: #000;
+	color: #fff;
 	padding-bottom: 3px;
 }
 
@@ -148,7 +150,7 @@ a:hover {
 }
 
 .footer a {
-	color: #000;
+	color: #fff;
 }
 
 .footer a:hover {
