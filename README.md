@@ -1,7 +1,7 @@
 ## Features
 
 - Clean, responsive, well organized with Modern UI Design. ⚡
-- Contains several categories with my personal notes about coding, networking and lifestyle.
+- Content in preparation; Coming soon.
 
 Free resource related to some [graphics;](https://freedesignresources.net/category/free-graphics/) that I have used in the project.
 
