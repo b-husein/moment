@@ -1,7 +1,6 @@
 ## Features
 
 - Clean, responsive, well organized with Modern UI Design. ⚡
-- Content in preparation; Coming soon.
 
 Free [graphics](https://freedesignresources.net/category/free-graphics/) resource that I have used in the project.
 
