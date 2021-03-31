@@ -76,7 +76,7 @@ a:hover {
 }
 
 .post-list a:hover {
-	border-bottom: #8C8C8C solid 2px;
+	/* border-bottom: #8C8C8C solid 2px; */
 	text-decoration: none;
 	color: #8C8C8C;
 }
